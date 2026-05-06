@@ -3,5 +3,6 @@ export let eggs = #{
         targets: "~/.config/alacritty",
         templates: ["alacritty.yml"],
         enabled: true,
+        strategy: "merge",
     }
 }
