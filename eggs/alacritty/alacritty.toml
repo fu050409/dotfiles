@@ -1,0 +1,31 @@
+[window]
+opacity = 0.85
+dimensions = { columns = 106, lines = 30 }
+padding = { x = 4, y = 4 }
+
+[colors]
+primary = { background = "#0d1117" }
+
+[font]
+size = 12
+
+[font.bold]
+family = "Maple Mono NF CN"
+style = "Bold"
+
+[font.bold_italic]
+family = "Maple Mono NF CN"
+style = "Bold Italic"
+
+[font.italic]
+family = "Maple Mono NF CN"
+style = "Italic"
+
+[font.normal]
+family = "Maple Mono NF CN"
+style = "Regular"
+
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/one_dark.toml"
+]
