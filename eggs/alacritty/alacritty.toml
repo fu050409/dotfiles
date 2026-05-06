@@ -1,13 +1,15 @@
 [window]
-opacity = 0.85
-dimensions = { columns = 106, lines = 30 }
+dimensions = { columns = 102, lines = 28 }
+blur = true
 padding = { x = 4, y = 4 }
+opacity = 0.8
+position = { x = 512, y = 400 }
 
 [colors]
 primary = { background = "#0d1117" }
 
 [font]
-size = 12
+size = 16
 
 [font.bold]
 family = "Maple Mono NF CN"
