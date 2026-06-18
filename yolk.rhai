@@ -4,5 +4,11 @@ export let eggs = #{
         templates: ["alacritty.yml"],
         enabled: true,
         strategy: "merge",
+    },
+    helix: #{
+        targets: "~/.config/helix",
+        templates: ["config.toml"],
+        enabled: true,
+        strategy: "merge",
     }
 }
