@@ -10,5 +10,17 @@ export let eggs = #{
         templates: ["config.toml"],
         enabled: true,
         strategy: "merge",
+    },
+    yazi: #{
+        targets: "~/.config/yazi",
+        templates: ["theme.toml", "yazi.toml"],
+        enabled: true,
+        strategy: "merge",
+    },
+    herdr: #{
+        targets: "~/.config/herdr",
+        templates: ["config.toml"],
+        enabled: true,
+        strategy: "merge",
     }
 }

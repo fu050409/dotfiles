@@ -1,0 +1,21 @@
+[mgr]
+ratio = [0, 1, 0]
+show_hidden = true
+show_symlink = true
+
+[opener]
+edit = [
+  { run = "zellij run --close-on-exit -- hx %s", desc = "Open with Helix", orphan = true, for = "unix" },
+  { run = "zed %s", desc = "Open with Zed", orphan = true, for = "windows" }
+]
+open = [
+  { run = 'xdg-open "$1"', desc = "Open", for = "linux" },
+  { run = 'open "$@"', desc = "Open", for = "macos" },
+  { run = 'start "" "%1"', orphan = true, desc = "Open", for = "windows" },
+]
+
+[open]
+rules = [
+  { mime = "text/*", use = "edit" },
+  { url = "*/", use = ["open", "reveal"] },
+]
