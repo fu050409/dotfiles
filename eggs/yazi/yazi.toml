@@ -4,8 +4,12 @@ show_hidden = true
 show_symlink = true
 
 [opener]
+ide = [
+  { run = "zellij run --close-on-exit -- hx %s || hx %s", desc = "Open with Helix", orphan = true, for = "unix" },
+  { run = "zed %s", desc = "Open with Zed", orphan = true, for = "windows" }
+]
 edit = [
-  { run = "zellij run --close-on-exit -- hx %s", desc = "Open with Helix", orphan = true, for = "unix" },
+  { run = "hx %s", desc = "Open with Helix", block = true, for = "unix" },
   { run = "zed %s", desc = "Open with Zed", orphan = true, for = "windows" }
 ]
 open = [
@@ -16,6 +20,7 @@ open = [
 
 [open]
 rules = [
+  # { mime = "text/*", use = ["ide", "edit"] },
   { mime = "text/*", use = "edit" },
   { url = "*/", use = ["open", "reveal"] },
 ]

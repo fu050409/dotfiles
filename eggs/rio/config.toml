@@ -1,0 +1,55 @@
+# Rio terminal configuration - mirrors Alacritty setup
+# Reference: https://rioterm.com/docs/config
+
+[window]
+columns = 102
+rows = 28
+opacity = 0.8
+blur = true
+padding = [4]
+
+[panel]
+border-radius = 0
+
+[platform]
+macos.window.blur = "macos-glass-regular"
+
+[fonts]
+size = 16
+
+[fonts.regular]
+family = "Maple Mono NF CN"
+style = "Regular"
+
+[fonts.bold]
+family = "Maple Mono NF CN"
+style = "Bold"
+
+[fonts.italic]
+family = "Maple Mono NF CN"
+style = "Italic"
+
+[fonts.bold-italic]
+family = "Maple Mono NF CN"
+style = "Bold Italic"
+
+[colors]
+background = '#0d1117'
+foreground = '#abb2bf'
+black = '#1e2127'
+red = '#e06c75'
+green = '#98c379'
+yellow = '#d19a66'
+blue = '#61afef'
+magenta = '#c678dd'
+cyan = '#56b6c2'
+white = '#abb2bf'
+
+light-black = '#5c6370'
+light-red = '#e06c75'
+light-green = '#98c379'
+light-yellow = '#d19a66'
+light-blue = '#61afef'
+light-magenta = '#c678dd'
+light-cyan = '#56b6c2'
+light-white = '#ffffff'

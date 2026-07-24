@@ -3,8 +3,5 @@ onboarding = false
 [ui.sound]
 enabled = false
 
-[ui]
-agent_panel_scope = "all"
-
 [theme]
 name = "catppuccin"

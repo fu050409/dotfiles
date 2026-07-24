@@ -22,5 +22,11 @@ export let eggs = #{
         templates: ["config.toml"],
         enabled: true,
         strategy: "merge",
+    },
+    rio: #{
+        targets: "~/.config/rio",
+        templates: ["config.toml"],
+        enabled: true,
+        strategy: "merge"
     }
 }
