@@ -27,6 +27,11 @@ export let eggs = #{
         targets: "~/.config/rio",
         templates: ["config.toml"],
         enabled: true,
-        strategy: "merge"
+        strategy: "merge",
+    },
+    niri: #{
+        targets: "~/.config/niri",
+        enabled: true,
+        strategy: "merge",
     }
 }
