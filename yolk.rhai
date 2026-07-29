@@ -31,7 +31,7 @@ export let eggs = #{
     },
     niri: #{
         targets: "~/.config/niri",
-        enabled: true,
+        enabled: SYSTEM.platform == "Linux",
         strategy: "merge",
     }
 }
