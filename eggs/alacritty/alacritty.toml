@@ -9,7 +9,11 @@ position = { x = 512, y = 400 }
 primary = { background = "#0d1117" }
 
 [font]
+# {% if SYSTEM.platform == "Linux" %}
+#<yolk> size = 11
+# {% else %}
 size = 16
+# {% end %}
 
 [font.bold]
 family = "Maple Mono NF CN"
