@@ -24,7 +24,11 @@ export let eggs = #{
         strategy: "merge",
     },
     rio: #{
-        targets: "~/.config/rio",
+        targets: if SYSTEM.platform == "Windows" {
+            "~/AppData/Local/rio"
+        } else {
+            "~/.config/rio"
+        },
         templates: ["config.toml"],
         enabled: true,
         strategy: "merge",
