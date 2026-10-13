@@ -12,6 +12,7 @@ padding = [4]
 border-radius = 0
 
 [platform]
+windows.shell = { program = "nu", args = [] }
 macos.window.blur = "macos-glass-clear"
 
 [fonts]
@@ -53,3 +54,9 @@ light-blue = '#61afef'
 light-magenta = '#c678dd'
 light-cyan = '#56b6c2'
 light-white = '#ffffff'
+
+# Work around Windows transparent-background rendering issue (Rio #1946).
+# {% if SYSTEM.platform == "Windows" %}
+#<yolk> [renderer]
+#<yolk> use-cpu = true
+# {% end %}
