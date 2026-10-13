@@ -1,3 +1,7 @@
 /.git
 /.deployed_cache
 /.yolk_git
+
+# Rio-generated runtime files
+/eggs/rio/log/
+/eggs/rio/shell-integration-*/
