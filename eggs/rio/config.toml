@@ -1,10 +1,18 @@
 # Rio terminal configuration - mirrors Alacritty setup
 # Reference: https://rioterm.com/docs/config
 
+# {% if SYSTEM.platform == "Windows" %}
+#<yolk> padding = [12, 16]
+# {% end %}
+
 [window]
 columns = 102
 rows = 28
+# {% if SYSTEM.platform == "Windows" %}
+#<yolk> opacity = 0.65
+# {% else %}
 opacity = 0.8
+# {% end %}
 blur = true
 padding = [4]
 
@@ -35,6 +43,9 @@ family = "Maple Mono NF CN"
 style = "Bold Italic"
 
 [colors]
+# {% if SYSTEM.platform == "Windows" %}
+#<yolk> cursor = "#61afef"
+# {% end %}
 background = '#0d1117'
 foreground = '#abb2bf'
 black = '#1e2127'
@@ -59,4 +70,12 @@ light-white = '#ffffff'
 # {% if SYSTEM.platform == "Windows" %}
 #<yolk> [renderer]
 #<yolk> use-cpu = true
+
+#<yolk> [navigation]
+#<yolk> hide-if-single = true
+
+#<yolk> [cursor]
+#<yolk> shape = "beam"
+#<yolk> blinking = true
+#<yolk> blinking-interval = 800
 # {% end %}
