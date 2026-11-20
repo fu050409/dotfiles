@@ -23,6 +23,9 @@ border-radius = 0
 windows.shell = { program = "nu", args = [] }
 macos.window.blur = "macos-glass-clear"
 
+[navigation]
+hide-if-single = false
+
 [fonts]
 size = 16
 
@@ -70,9 +73,6 @@ light-white = '#ffffff'
 # {% if SYSTEM.platform == "Windows" %}
 #<yolk> [renderer]
 #<yolk> use-cpu = true
-
-#<yolk> [navigation]
-#<yolk> hide-if-single = true
 
 #<yolk> [cursor]
 #<yolk> shape = "beam"
