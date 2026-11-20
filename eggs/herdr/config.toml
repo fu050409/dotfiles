@@ -8,3 +8,4 @@ name = "catppuccin"
 
 [ui]
 status_indicators = "dots"
+agent_panel_sort = "priority"
