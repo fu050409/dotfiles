@@ -1,4 +1,12 @@
 export let eggs = #{
+    // Deploy only explicitly listed, distributable skills. See docs/agent-skills.md.
+    "agent-skills": #{
+        targets: #{
+            himalaya: "~/.agents/skills/himalaya",
+        },
+        enabled: true,
+        strategy: "put",
+    },
     alacritty: #{
         targets: "~/.config/alacritty",
         templates: ["alacritty.toml"],
