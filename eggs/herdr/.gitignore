@@ -1,0 +1,4 @@
+# Track only the Herdr configuration and this ignore file.
+/*
+!/.gitignore
+!/config.toml

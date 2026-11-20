@@ -5,3 +5,6 @@ enabled = false
 
 [theme]
 name = "catppuccin"
+
+[ui]
+status_indicators = "dots"
